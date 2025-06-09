@@ -15,7 +15,7 @@ pygame.display.set_caption('Flappy Bird')
 clock = pygame.time.Clock()
 FPS = 60
 
-# Bird
+#Bird
 bird_width = 50
 bird_height = 35
 bird_x = 60
@@ -54,18 +54,18 @@ ground_height = 100
 ground_img = pygame.image.load('Flappy Bird/Sprites/base.png').convert_alpha()
 ground_img = pygame.transform.scale(ground_img, (SCREEN_WIDTH, ground_height))
 
-# Number imgs
-digit_imgs = {}
+# Score imgs
+score_imgs = {}
 for i in range(10):
     img = pygame.image.load(f'Flappy Bird/Sprites/{i}.png').convert_alpha()
     img = pygame.transform.scale(img, (30, 45))
-    digit_imgs[str(i)] = img
+    score_imgs[str(i)] = img
 
 # Game Over img
 gameover_img = pygame.image.load('Flappy Bird/Sprites/gameover.png').convert_alpha()
 gameover_img = pygame.transform.scale(gameover_img, (300, 80))
 
-# Message img
+# Get ready img
 get_ready = pygame.image.load('Flappy Bird/Sprites/message.png').convert_alpha()
 get_ready = pygame.transform.scale(get_ready, (300, 400))
 
@@ -129,11 +129,11 @@ def drawing(bird, pipes, score, bird_frame, bird_velocity, bg_x, ground_x, groun
     # Scoring
     if show_score:
         score_str = str(score)
-        total_width = sum(digit_imgs[d].get_width() for d in score_str)
+        total_width = sum(score_imgs[d].get_width() for d in score_str)
         x = SCREEN_WIDTH // 2 - total_width // 2
         for d in score_str:
-            screen.blit(digit_imgs[d], (x, 30))
-            x += digit_imgs[d].get_width()
+            screen.blit(score_imgs[d], (x, 30))
+            x += score_imgs[d].get_width()
     
     # Flash effect (when bird dies)
     if flash_timer > 0:
@@ -149,11 +149,11 @@ def game_over(score):
     screen.blit(gameover_img, (SCREEN_WIDTH // 2 - gameover_img.get_width() // 2, SCREEN_HEIGHT // 2 - 150))
 
     score_str = str(score)
-    total_width = sum(digit_imgs[d].get_width() for d in score_str)
+    total_width = sum(score_imgs[d].get_width() for d in score_str)
     x = SCREEN_WIDTH // 2 - total_width // 2
     for d in score_str:
-        screen.blit(digit_imgs[d], (x, SCREEN_HEIGHT // 2 - 30))
-        x += digit_imgs[d].get_width()
+        screen.blit(score_imgs[d], (x, SCREEN_HEIGHT // 2 - 30))
+        x += score_imgs[d].get_width()
 
     screen.blit(restart_img, restart_rect.topleft)
     
