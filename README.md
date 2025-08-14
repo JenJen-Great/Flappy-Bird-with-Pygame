@@ -23,15 +23,12 @@ pip install pygame
 
 # Run the game
 - From your project root, run:
-python main.py
+<code>python main.py</code>
 
 # Credits & Acknowledgements
 - Assets (sprites): samuelcust/flappy-bird-assets — downloaded from https://github.com/samuelcust/flappy-bird-assets (MIT license).
 
-- Please keep or include the original asset pack's LICENSE when you redistribute the assets. The original author and repository deserve credit for the artwork and sounds.
-- Copy-paste-ready acknowledgement:
-Assets (sprites & audio) used in this project were downloaded from
-https://github.com/samuelcust/flappy-bird-assets (MIT License). 
+- Please keep or include the original asset pack's LICENSE when you redistribute the assets. The original author and repository deserve credit for the artwork and sounds. 
 
 # License
 This project is licensed under the MIT License — see the LICENSE file for details.
