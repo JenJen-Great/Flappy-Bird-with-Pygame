@@ -1,7 +1,6 @@
 # Flappy Bird Clone (Pygame)
 
 A polished Flappy Bird clone built with Pygame.
-This project uses sprite and audio assets that I downloaded from the samuelcust/flappy-bird-assets repository (MIT license). Thank you to the asset creator for the high-quality sprites and sounds.
 
 # Features
 Smooth bird animation (flap cycle + rotation)
