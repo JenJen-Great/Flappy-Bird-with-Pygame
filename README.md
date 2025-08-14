@@ -33,5 +33,5 @@ python main.py
 Assets (sprites & audio) used in this project were downloaded from
 https://github.com/samuelcust/flappy-bird-assets (MIT License). 
 
-# License (this project)
+# License
 This project is licensed under the MIT License — see the LICENSE file for details.
