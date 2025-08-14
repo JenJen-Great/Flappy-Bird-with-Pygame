@@ -16,9 +16,8 @@ Click the restart button or press Space on the game over screen to play again
 Close window — Exit
 
 # Requirements
-Python 3.8+
-Pygame
-
+- Python 3.8+
+- Pygame
 - Install Pygame:
 pip install pygame
 
@@ -33,3 +32,6 @@ python main.py
 - Copy-paste-ready acknowledgement:
 Assets (sprites & audio) used in this project were downloaded from
 https://github.com/samuelcust/flappy-bird-assets (MIT License). 
+
+# License (this project)
+This project is licensed under the MIT License — see the LICENSE file for details.
