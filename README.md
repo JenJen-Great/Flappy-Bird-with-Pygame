@@ -19,7 +19,9 @@ Close window — Exit
 - Python 3.8+
 - Pygame
 - Install Pygame:
-pip install pygame
+<pre>
+  <code>pip install pygame</code>
+</pre>
 
 # Run the game
 - From your project root, run:
