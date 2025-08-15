@@ -1,6 +1,8 @@
 # Flappy Bird Clone (Pygame)
-
 A polished Flappy Bird clone built with Pygame.
+
+# Demo (Screen Shot)
+<img width="420" height="420" alt="Python 3 11 15_08_2025 2_21_23 pm" src="https://github.com/user-attachments/assets/3385bda3-e2b2-4df4-bd3b-0e511fe30e5c" />
 
 # Features
 Smooth bird animation (flap cycle + rotation)
